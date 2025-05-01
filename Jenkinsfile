@@ -14,7 +14,7 @@ pipeline {
                 echo 'Running Docker container...'
                 sh '''
                     docker rm -f nginx-container || true
-                    docker run -d --name nginx-container -p 8080:80 custom-nginx:1.0
+                    docker run -d --name nginx-container -p 8085:80 custom-nginx:1.0
                 '''
             }
         }
